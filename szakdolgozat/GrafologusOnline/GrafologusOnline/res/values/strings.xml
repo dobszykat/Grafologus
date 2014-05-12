@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Grafológus Online</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="chat">Chat</string>
+    <string name="videochat">Video chat</string>
+	<string name="welcometext">Kérem adja meg milyen ábrát szeretne kérni a pácienstől!</string>
+	<string name="welcomepatient">Üdvözöljük!</string>
+    <string name="texthint">Ide írja utasítását a páciensnek</string>
+    <string name="send">Küld</string>
+    <string name="drawings">Korábban bekért adatok..</string>
+    <string name="questionnare">Kérdéssorok</string>
+    <string name="newquestionnare">Új kérdéssor</string>
+    <string name="drawinghint">Rajz</string>
+    <string name="askagain">Újrakér</string>
+    <string name="save">Ment</string>
+    <string name="replay">Újrajátszás</string>
+    <string name="getquestionnarename">"Adja meg a kérdéssor nevét:" </string>
+    <string name="getquestionnarenamehint">Ide írja a kérdéssor nevét..</string>
+    <string name="patientwaiting">A grafológus utasítása hamarosan megjelenik..</string>
+    <string name="letsdraw">Kattintson ide a rajzoláshoz</string>
+    <string name="finishdrawing">Befejeztem</string>
+    <string name="chathint">Ide írhatja üzenetét</string>
+    <string name="back">Vissza</string>
+    <string name="delete">Törlés</string>
+    <string name="edit">Szerkeszt</string>
+    <string name="select">Kiválaszt</string>
+    <string name="graphologist">Grafológus</string>
+    <string name="patient">Páciens</string>
+    <string name="waitingforpatient">Várakozás a páciens rajzára..</string>
+    <string name="getname">Kérem írja be a nevét!</string>
+    <string name="getnamehint">Ide írja a nevét..</string>
+    <string name="login">Belépek</string>
+    <string name="getid">Kérem írja be azonosító kódját!</string>
+    <string name="getidhint">Ide írja az azonosító kódját..</string>
+    <string name="finishexam">Vizsgálat befejezése</string>
+    <string name="start_chat">start chat</string>
+    <string name="password">Jelszó</string>
+    <string name="please_wait">Kérem várjon</string>
+    <string name="login_by_first_user">Login as the first user</string>
+    <string name="login_by_second_user">Login as the second user</string>
+    <string name="call_user">call </string>
+    <string name="calling_dialog_title">Bejövő hívás</string>
+    <string name="calling_dialog_txt">Hívás</string>
+    <string name="call_start_txt">Hivás kezdése</string>
+    <string name="call_canceled_txt">A hívás véget ért</string>
+    <string name="video_call_txt">Videochat</string>
+    <string name="audio_call_txt">AudioCall</string>
+    <string name="defaultserver">192.168.0.20</string>
+    <string name="videochattext">Videochat kezdéséhez kérem nyomja meg a gombot!\nCsak akkor tud hívást indítani, ha a másik fél is kapcsolódik.\n Jelezze felé szándékát a Chat-en keresztül! </string>
+    
+    <string name="getserverip">Kérem adja meg a szerver elérhetőségét!</string>
+    
+    <color name="appyellow">#FCEF9A</color>
+    <color name="black">#000000</color>
+</resources>

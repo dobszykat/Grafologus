@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grafologus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<supports-screens android:compatibleWidthLimitDp="320" />
+	<supports-screens android:largestWidthLimitDp="500" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:vmSafeMode="true"       
+        android:allowClearUserData="true"
+        android:hardwareAccelerated="true" >
+        <activity
+            android:name="com.grafologus.main.MainActivity"
+            android:windowSoftInputMode="stateHidden" 
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name="com.grafologus.main.Graphologist"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden" 
+        android:parentActivityName="com.grafologus.main.MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.grafologus.MainActivity" />
+    </activity>
+     <activity
+        android:name="com.grafologus.main.Patient"
+        android:windowSoftInputMode="stateHidden" 
+        android:screenOrientation="portrait"
+        android:parentActivityName="com.grafologus.main.MainActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.grafologus.MainActivity" />
+    </activity>
+     <activity
+        android:name="com.grafologus.main.Chat"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateHidden" 
+        android:parentActivityName="com.grafologus.main.Partner" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.grafologus.Partner" />
+    </activity>
+             <activity
+        android:name="com.grafologus.main.NewQuestion"
+        android:windowSoftInputMode="stateHidden" 
+        android:screenOrientation="portrait"
+        android:parentActivityName="com.grafologus.main.Graphologist" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.grafologus.Graphologist" />
+    </activity>
+             <activity
+        android:name="com.grafologus.main.QuestionsList"
+        android:windowSoftInputMode="stateHidden"
+        android:screenOrientation="portrait"
+        android:theme="@color/black"
+        android:parentActivityName="com.grafologus.main.Graphologist" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.grafologus.Graphologist" />
+    </activity>
+     <activity
+        android:name="com.grafologus.main.GetDrawings"
+        android:windowSoftInputMode="stateHidden"
+        android:screenOrientation="portrait"
+        android:theme="@color/black"
+        android:parentActivityName="com.grafologus.main.Graphologist" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.grafologus.Graphologist" />
+    </activity>
+<activity
+            android:name="com.grafologus.ui.ActivityCallUser"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name="com.grafologus.ui.ActivityVideoChat"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.grafologus.ui.ActivityLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name="com.quickblox.module.videochat.core.service.QBVideoChatService"/>
+    </application>
+
+</manifest>

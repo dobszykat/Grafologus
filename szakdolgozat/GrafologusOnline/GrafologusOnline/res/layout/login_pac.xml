@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewFlipper"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3041"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/welcomepatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/welcomepatient"
+        android:textColor="#FCEF9A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pleasewait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/patientwaiting"
+        android:textColor="#FCEF9A"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/letsdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        android:onClick="OnClick_Drawing"
+        android:background="@drawable/buttonclicked"
+        android:text="@string/letsdraw"
+        android:textColor="#FCEF9A" />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="#2D3041"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/finish"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background ="@drawable/buttonclicked"
+        android:onClick="OnClick_Finish"
+        android:textColor="#FCEF9A"
+        android:text="@string/finishdrawing" />
+<FrameLayout 
+   android:id="@+id/viewframelayout"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textstyle" />
+    </FrameLayout>
+</LinearLayout>
+</ViewFlipper>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget39"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#2D3041"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/namerequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:enabled="true"
+        android:gravity="center_horizontal"
+        android:text="@string/getname"
+        android:textColor="#FCEF9A"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/getnamehint"
+        android:inputType="textPersonName"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/getid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/getid"
+        android:textColor="#FCEF9A"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/getidhint"
+        android:inputType="text"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="@color/black" >
+
+    </EditText>
+
+    <RadioGroup
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:checked="true"
+            android:paddingLeft="40dp"
+            android:text="@string/patient"
+            android:textColor="#FCEF9A"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/graphologist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/graphologist"
+            android:textColor="#FCEF9A"
+            android:textSize="22sp" />
+    </RadioGroup>
+        <TextView
+        android:id="@+id/serveriptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/getserverip"
+        android:textColor="#FCEF9A"
+        android:textSize="20sp" />
+        
+        <EditText
+        android:id="@+id/serverip"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:padding="2dp"
+        android:text="@string/defaultserver"
+        android:singleLine="true"
+        android:textColor="@color/black" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonclicked"
+        android:clickable="true"
+        android:minWidth="30dp"
+        android:onClick="onClick_Login"
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:text="@string/login"
+        android:textColor="#FCEF9A" />
+
+</TableLayout>

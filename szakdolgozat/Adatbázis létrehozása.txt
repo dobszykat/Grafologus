@@ -1,0 +1,23 @@
+//Adatbázis létrehozása
+Create database grafologus;
+
+//drawings tábla létrehozásához
+CREATE TABLE `grafologus`.`drawings` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `FullName` VARCHAR(45) NOT NULL,
+  `PatientId` VARCHAR(45) NOT NULL,
+  `DrawingName` VARCHAR(45) NOT NULL,
+  `DrawingData` LONGTEXT NOT NULL,
+  `DrawingDate` DATE NULL,
+  PRIMARY KEY (`id`, `PatientId`));
+
+
+//Grafológusok táblája
+CREATE TABLE `grafologus`.`graphologist_users` (
+  `id` INT(10) NOT NULL AUTO_INCREMENT,
+  `Name` VARCHAR(45) NOT NULL,
+  `Password` CHAR(40) NOT NULL,
+  PRIMARY KEY (`id`, `Name`));
+  
+//Grafológus táblába a következõképpen kell felvinni az adatokat (ez esetben admin a név és admin a jelszó)
+ INSERT INTO grafologus.graphologist_users (Name,Password) VALUES ('admin', SHA1('admin'));

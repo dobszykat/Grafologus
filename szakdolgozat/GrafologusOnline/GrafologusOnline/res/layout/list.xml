@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewFlipper"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<ScrollView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+<LinearLayout
+    android:id="@+id/QuestionsList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+</LinearLayout>
+</ScrollView>
+<ScrollView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+<LinearLayout
+    android:id="@+id/MoreList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:padding="10dp"
+    android:orientation="vertical">
+</LinearLayout>
+</ScrollView>
+</ViewFlipper>

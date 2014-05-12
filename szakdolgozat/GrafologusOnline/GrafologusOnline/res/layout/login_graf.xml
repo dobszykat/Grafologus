@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewFlipper"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<LinearLayout
+    android:id="@+id/grafologus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3041"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/namerequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/welcometext"
+        android:textColor="#FCEF9A"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tosend"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:hint="@string/texthint"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:typeface="sans" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/sendquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonclicked"
+        android:onClick="OnClick_SendAsking"
+        android:text="@string/send"
+        android:textColor="#FCEF9A" />
+
+    <Button
+        android:id="@+id/drawings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonclicked"
+        android:onClick="OnClick_Drawings"
+        android:text="@string/drawings"
+        android:textColor="#FCEF9A" />
+
+    <Button
+        android:id="@+id/questionlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonclicked"
+        android:onClick="OnClick_Questionnaire"
+        android:text="@string/questionnare"
+        android:textColor="#FCEF9A" />
+
+    <Button
+        android:id="@+id/newquestionnare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonclicked"
+        android:onClick="OnClick_NewQuestionnaire"
+        android:text="@string/newquestionnare"
+        android:textColor="#FCEF9A" />
+
+    <Button
+        android:id="@+id/finishexam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonclicked"
+        android:onClick="OnClick_FinishExam"
+        android:text="@string/finishexam"
+        android:textColor="#FCEF9A" />
+
+	<FrameLayout
+	    android:id="@+id/viewdrawing"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp" >
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonclicked"
+        android:visibility="invisible"
+        android:text="@string/drawinghint"
+        android:textColor="#FCEF9A" />
+
+    <TextView
+        android:id="@+id/waitingfordrawing"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/waitingforpatient"
+        android:textColor="#FCEF9A"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    </FrameLayout>
+
+</LinearLayout>
+
+	<LinearLayout
+    android:id="@+id/showdrawing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3041"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/askagain"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonclicked"
+            android:onClick="OnClick_Again"
+            android:text="@string/askagain"
+            android:textColor="#FCEF9A" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/buttonclicked"
+            android:onClick="OnClick_SaveCoords"
+            android:text="@string/save"
+            android:textColor="#FCEF9A" />
+
+        <Button
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonclicked"
+            android:onClick="OnClick_Replay"
+            android:text="@string/replay"
+            android:textColor="#FCEF9A" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/viewframelayout2"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textstyle" />
+
+    </FrameLayout>
+	</LinearLayout>
+</ViewFlipper>

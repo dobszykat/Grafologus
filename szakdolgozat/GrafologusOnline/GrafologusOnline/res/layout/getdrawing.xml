@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewFlipper"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    android:id="@+id/drawinglistlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+         android:id="@+id/list"
+        android:layout_weight="1.0"/>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/viewdrawinglayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:background="#2D3041"
+    android:orientation="vertical" >
+
+<FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+	               <Button
+	                   android:id="@+id/replay"
+	                   android:layout_width="162dp"
+	                   android:layout_height="fill_parent"
+	                   android:layout_gravity="left"
+	                   android:background="@drawable/buttonclicked"
+	                   android:onClick="OnClick_Back"
+	                   android:text="@string/back"
+	                   android:textColor="#FCEF9A" />
+
+	               <Button
+	                   android:id="@+id/replaybutt"
+	                   android:layout_width="157dp"
+	                   android:layout_height="fill_parent"
+	                   android:layout_gravity="right"
+	                   android:background="@drawable/buttonclicked"
+	                   android:onClick="OnClick_Replay"
+	                   android:text="@string/replay"
+	                   android:textColor="#FCEF9A" />
+
+	    </FrameLayout>
+
+	<FrameLayout
+	    android:id="@+id/viewdrawing"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp" >
+	
+	   <View
+	       android:id="@+id/view"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:background="@drawable/textstyle" />
+
+	   </FrameLayout>
+	   
+</LinearLayout>
+</ViewFlipper>

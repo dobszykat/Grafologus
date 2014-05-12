@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/chatscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.71"
+        android:background="#2D3041"
+        android:fillViewport="true"
+		android:gravity="bottom"
+		android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/chattext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:layout_gravity="top"
+            android:padding="10dp"
+            android:textColor="#FCEF9A"
+            android:textSize="20sp" >
+        </TextView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonclicked"
+        android:onClick="OnClick_Send"
+        android:text="@string/send"
+        android:textColor="#FCEF9A" >
+    </Button>
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="#FFFFFF"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:hint="@string/chathint"
+        android:singleLine="true"
+        android:textSize="20sp" >
+    </EditText>
+
+</LinearLayout>

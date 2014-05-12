@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+
+<LinearLayout
+    android:id="@+id/NewQuestions"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#2D3041"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#FCEF9A"
+        android:text="@string/getquestionnarename"/>
+
+    <EditText
+        android:id="@+id/nameofquestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textstyle"
+        android:hint="@string/getquestionnarenamehint"
+        android:ems="10"
+        android:height="44dp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:padding="10dp" >
+
+    </EditText>
+</LinearLayout>
+</ScrollView>
